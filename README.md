@@ -13,5 +13,5 @@ Acceptans Test
 * You will get a list of all the calculations you've done when the application has been open.
 * Press [Enter] or any key to go back to the menu.
 * If you want to exit the program, write 0 and press [Enter]. ( This will reset every Calculation )
-* 
+ 
 Good Luck!
