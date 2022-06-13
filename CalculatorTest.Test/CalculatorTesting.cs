@@ -49,7 +49,8 @@ namespace CalculatorTest.Test
         [InlineData(40, 20, 10, false)]
         [InlineData(0.5, 0.14, 0.64, true)]
         [InlineData(500.5, 1.5, 502, true)]
-        public void Test_Result_With_Theory_Using_Addition(double x,double y,double sum,bool expected)
+
+        public void Theory_Test_Using_Addition(double x,double y,double sum,bool expected)
         {
             var actual = Addition.UseAddition(x,y);
             bool actualBool;
