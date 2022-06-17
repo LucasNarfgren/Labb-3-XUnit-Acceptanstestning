@@ -14,6 +14,7 @@ namespace Labb_3_XUnit_Acceptanstestning
             double x = double.Parse(Console.ReadLine());
             Console.Write("Second Number: ");
             double y = double.Parse(Console.ReadLine());
+
             double sum = Division.UseDivision(x, y);
             Console.WriteLine("Answer: " + Division.UseDivision(x, y));
             Console.ReadKey();
@@ -23,6 +24,10 @@ namespace Labb_3_XUnit_Acceptanstestning
 
         public static double UseDivision(double x, double y)
         {
+            if (y == 0 || x == 0)
+            {
+                return 0;
+            }
             return x / y;
         }
     }

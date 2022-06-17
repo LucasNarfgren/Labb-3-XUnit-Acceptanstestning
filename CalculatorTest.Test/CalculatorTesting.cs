@@ -7,6 +7,18 @@ namespace CalculatorTest.Test
     public class CalculatorTesting
     {
         [Fact]
+        public void Division_Test_20_Divided_By_0_Return_0()
+        {
+            // Arrange + Act
+            var sut = Division.UseDivision(20, 0);
+            // Assert
+            if (sut != 0)
+            {
+                Assert.Throws<IndexOutOfRangeException>(() =>  Division.UseDivision(20,0));
+            }
+            Assert.Equal(0, sut);
+        }
+        [Fact]
         public void Division_Test_50_Divided_By_2_Return_25()
         {
             // Arrange + Act
