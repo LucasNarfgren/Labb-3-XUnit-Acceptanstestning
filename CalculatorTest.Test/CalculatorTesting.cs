@@ -14,7 +14,7 @@ namespace CalculatorTest.Test
             // Assert
             if (sut != 0)
             {
-                Assert.Throws<IndexOutOfRangeException>(() =>  Division.UseDivision(20,0));
+                Assert.Throws<ArgumentOutOfRangeException>(() =>  Division.UseDivision(20,0));
             }
             Assert.Equal(0, sut);
         }
